@@ -5,7 +5,7 @@ function AdminOrderDetailPage() {
   const { id } = useParams();
   const navigate = useNavigate();
   const apiBase = useMemo(
-    () => import.meta.env.VITE_API_BASE_URL || "http://localhost:5005",
+    () => import.meta.env.VITE_API_BASE_URL || "https://mireumall-demo-production.up.railway.app",
     []
   );
   const [order, setOrder] = useState(null);
